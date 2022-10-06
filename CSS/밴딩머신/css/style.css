@@ -1,0 +1,138 @@
+:root {
+  --main-color: #eae8fe;
+  --second-color: #ffffff;
+  --btn-color: #6327fe;
+  --font-color: #000000;
+  --font_sub-color: #333333;
+  --border-color: #bdbdbd;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap");
+
+body {
+  background-color: var(--main-color);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.screen_out {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* styling */
+.header_logo {
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 748px;
+  margin: 67px auto 171px;
+}
+
+.VM {
+  width: 360px;
+  height: 545px;
+  background-color: var(--second-color);
+}
+
+.my {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 545px;
+  /* background-color: var(--second-color); */
+}
+
+/* 소지금! */
+.money {
+  width: 360px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: var(--second-color);
+}
+
+.whatibought {
+  width: 360px;
+  height: 474px;
+  background-color: var(--second-color);
+}
+
+.bought_coke_title {
+  text-align: center;
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--font-color);
+}
+
+.bought_coke_list {
+  box-sizing: border-box;
+  padding: 12px 10px 0 12px;
+  width: 306px;
+  height: 364px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.bought_coke {
+  display: flex;
+  box-sizing: border-box;
+  padding: 6px 8px 7px 10px;
+  width: 276px;
+  height: 46px;
+  background-color: var(--second-color);
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+
+.bought_coke_img {
+  padding-right: 10px;
+}
+
+.bought_coke_name {
+  padding-top: 9px;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+}
+
+.bought_howmany {
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-left: auto;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 4px 10px 6px;
+  text-align: center;
+}
+
+.total {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  text-align: end;
+  padding-top: 6px;
+  padding-right: 27px;
+}
+
+.totoal_money,
+.total_howmuch {
+  display: inline;
+}

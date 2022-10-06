@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "SpoqaHanSansNeo-Regular";
+  text-decoration: none;
+}
+
+.weniv_login_widget {
+  background-color: #ffffff;
+  width: 350px;
+  height: 140px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+/*.sr-only {
+  /* 아예 크기 차지도 안되게 하고 싶으면?
+       이 코드 자체가 뭔지도 아직 모르겠다 ㅎ */
+/*clip-path: polygon(0 0, 0 0, 0 0); */
+
+.welcome_msg {
+  height: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.login_btn {
+  display: block;
+  background-color: #711bff;
+  width: 318px;
+  height: 40px;
+  border-radius: 4px;
+  /* 유동적으로 크기 고려?! */
+}
+
+.weniv_logo {
+  /* vertical-align: auto; */
+}
+
+.login {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
