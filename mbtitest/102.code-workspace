@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../CSS/102"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "mbtitest"
+  }
+}
