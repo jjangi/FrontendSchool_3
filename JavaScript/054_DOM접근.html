@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+    <style>
+      .blue {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="myDiv">div 입니다!</div>
+    <div class="myDiv">div 입니다!</div>
+    <div class="myDiv">div 입니다!</div>
+    <div class="myDiv">div 입니다!</div>
+    <div class="myDiv">div 입니다!</div> -->
+
+    <!-- 점심 식단
+    <article id="container">
+      <ul>
+        <li>탕수육</li>
+        <li class="item-second">유산슬</li>
+        <li>짜장면</li>
+      </ul>
+    </article>
+
+    저녁 식단
+    <article>
+      <ul>
+        <li>된장국</li>
+        <li class="item-second">김치찌개</li>
+        <li>해장국</li>
+      </ul>
+    </article> -->
+
+    <!-- <button>Hello!</button> -->
+
+    <button>Make me BLUE!</button>
+
+    <script>
+      //* DOM 트리에 접근하기 *
+      // HTMLCollection -> 유사 배열 객체(:객체인데 key가 index 형식으로 입력된 형태)로 결과 출력됨.
+      // 해당하는 id를 가진 요소에 접근하는 방법
+      //console.log(document.getElementById("myDiv"));
+      // 찾아서 저장하고 사용한다!!
+      //const myDiv = document.getElementById("myDiv");
+
+      // 해당하는 모든 요소에 접근하기
+      //console.log(document.getElementsByTagName("div"));
+
+      // 해당하는 클래스를 가진 모든 요소에 접근하기
+      //console.log(document.getElementsByClassName("myDiv"));
+
+      // 배운 문법을 바탕으로 HTML 요소들 첫 번째 item-second 클래스와 첫 번째 li를 콘솔로 출력해보세요 :)
+      // 탐색을 document 부터 시작할 필요는 없습니다!
+      //   const container = document.getElementById("container");
+      //   console.log(container.getElementsByClassName("item-second")[0]);
+      //   console.log(container.getElementsByTagName("li")[0]);
+
+      // 위 접근 방식 말고 아래로~ ㅎㅎ
+      // NodeList로 결과 출력됨
+      // CSS 선택자로 단일 요소 접근하기
+      //   console.log(document.querySelector(".item-second"));
+      //   console.log(document.querySelector("li"));
+
+      // CSS 선택자로 여러 요소에 접근하기
+      //   console.log(document.querySelectorAll(".item-second"));
+      //   console.log(document.querySelectorAll("li"));
+      //
+
+      //* DOM 제어 명렁어 *
+      // 1) 이벤트 삽입
+      // 이벤트의 타입에는 click, mouseover, mouseout, wheel 등 다양한 이벤트를 감지합니다.
+      // listener 함수의 인수에는 이벤트에 대한 정보가 담겨있습니다.
+      //   const myBtn = document.querySelector("button");
+
+      //   myBtn.addEventListener("wheel", function () {
+      //     console.log("hello world");
+      //   });
+
+      // 2) 클래스 제어
+      const myBtn = document.querySelector("button");
+
+      myBtn.addEventListener("click", function () {
+        // blue 라는 클래스의 속성 값을 지정 할 수 있습니다.
+        myBtn.classList.add("blue");
+
+        // myBtn.classList.remove("blue");     클래스를 제거합니다.
+        // myBtn.classList.toggle("blue");     클래스를 토글합니다. 없으면 넣어주고, 있으면 제거합니다.
+        // console.log(myBtn.classList.contains("blue"));   해당하는 클래스가 있는지 확인합니다.
+      });
+      //   if(myBtn.classList.contains("blue")) {
+      //     ...
+      //   }else {
+      //     ...
+      //   }
+      // 3) 요소 제어
+    </script>
+  </body>
+</html>
