@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>리액트 1분만에 추가해보기!</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        function 자기소개(props) {
+            return (
+                <div>
+                    <p>제 이름은 {props.name}</p>
+                    <p>제 나이은 {props.age}</p>
+                    <p>제 통장은 {props.money}</p>
+                    <p>저희 집은 {props.house}</p>
+                    <p>커피는 {props.coffee}</p>
+                </div>
+            );
+        }
+
+        function 자기소개2(이솔) {
+            return (
+                <div>
+                    <p>제 이름은 {이솔.name}</p>
+                    <p>제 나이은 {이솔.age}</p>
+                    <p>제 통장은 {이솔.money}</p>
+                    <p>저희 집은 {이솔.house}</p>
+                    <p>커피는 {이솔.coffee}</p>
+                </div>
+            );
+        }
+
+        function 자기소개3({ name, age, money, house, coffee }) {
+            return (
+                <div>
+                    <p>제 이름은 {name}</p>
+                    <p>제 나이은 {age}</p>
+                    <p>제 통장은 {money}</p>
+                    <p>저희 집은 {house}</p>
+                    <p>커피는 {coffee}</p>
+                </div>
+            );
+        }
+
+
+        const app = (
+            <main>
+                <자기소개 name='isol' age='22' money='1000' house='null' coffee='cannot' />
+                {자기소개({
+                    name: 'isol', age: '22', money: '1000', house: 'null', coffee: 'cannot'
+                })}
+                <자기소개 name='isol' age='22' money={1000} house='null' coffee='cannot' />
+                <자기소개2 name='isol' age='22' money='10000' house='null' coffee='cannot' />
+                <자기소개 name='isol' age='22' money='100000' house='null' coffee='cannot' />
+            </main>
+        );
+
+        const domContainer = document.querySelector("#root");
+        ReactDOM.render(app, domContainer);
+    </script>
+</body>
+
+</html>
