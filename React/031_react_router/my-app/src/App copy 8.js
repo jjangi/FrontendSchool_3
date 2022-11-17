@@ -107,12 +107,8 @@ function App() {
         <Route path="/study" element={<Study />}/>
         <Route path="/study/:num" element={<StudyDetail />}/>
         {/* <Route path="/study/:num/:test" element={<Test />}/> */}
-        {/* <Route path="/study/:num/chat" element={<Chat />}/>
-        <Route path="/study/:num/memo" element={<Memo />}/> */}
-        <Route path="/study/:num/*" element={<Outlet />}>
-          <Route path="chat" element={<Chat />}/>
-          <Route path="memo" element={<Memo />}/>
-        </Route>
+        <Route path="/study/:num/chat" element={<Chat />}/>
+        <Route path="/study/:num/memo" element={<Memo />}/>
         <Route path="/notice" element={<Notice />}/>
       </Routes>
     </BrowserRouter>
