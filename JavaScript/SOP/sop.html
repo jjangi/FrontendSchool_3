@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>Hello SOP!</h1>
+
+    <iframe class="test" src="test.html" frameborder="0"></iframe>
+    <iframe class="youtube" width="775" height="436" src="https://www.youtube.com/embed/bI4Mg5-o3Xs"
+        title="(MV)온앤오프 (ONF)_Your Song" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <script>
+        let x = document.querySelector(".test")
+        let y = document.querySelector(".youtube")
+        x.addEventListener("load", () => {
+            console.log('same origin', x.contentDocument);
+            x.contentDocument.body.style.backgroundColor = "red"
+        })
+        y.addEventListener("load", () => {
+            console.log('same origin', y.contentDocument);
+            y.contentDocument.body.style.backgroundColor = "red"
+        })
+        // contentDocument : 만약 iframe과 iframe's parent document가 같은 origin을 가진다면 iframe의 document 객체를 반환합니다.
+    </script>
+</body>
+
+</html>
